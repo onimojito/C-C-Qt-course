@@ -1,0 +1,2 @@
+hellomake:
+	gcc -o 1 1.c
