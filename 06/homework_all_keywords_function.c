@@ -34,5 +34,4 @@ int list_all_c_keywords()
     }
     printf("         \u27f0 \u27f0 \u27f0 \u27f0\n");
     printf("This is an output of function that lists all c keywords\n\n");
-    //printf("© 2015 'C IN A NUTSHELL Second Edition' by Peter Prinz and Tony Crawford\n\n");
 }
