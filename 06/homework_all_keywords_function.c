@@ -25,6 +25,7 @@ int list_all_c_keywords()
         }
         fprintf(stdout, "%s", str);
         printf("\n\n");
+        fclose(file_ptr);
     }
     else
     {

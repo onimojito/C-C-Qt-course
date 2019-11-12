@@ -18,10 +18,12 @@ int main()
         printf("         \u27f0 \u27f0 \u27f0 \u27f0\n");
         printf("      File Contents\n\n");
         printf("Datasize (char): %lu bytes.\n\n", (strlen(str) + 1 ) * sizeof(char));
+
     }
     else
     {
         fprintf(stderr, "Error reading file...\n");
         return 1;
     }
+    fclose(file_ptr);
 }
