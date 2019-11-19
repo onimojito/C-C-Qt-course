@@ -74,7 +74,7 @@ int add_contact(){
     struct list arr[MAX_RECORDS];
     int i = 0;
     FILE * database;
-    database = fopen("database.txt", "a+t");
+    database = fopen("homework_database.txt", "a+t");
     printf("\e[1;1H\e[2J");
     fprintf(stdout, "\nFirst Name: ");
     getchar(); //Убрать '\n' из потока
@@ -101,7 +101,7 @@ int add_contact(){
 int get_contact_list(){
     char contact_list[MAX_SYMBOLS_IN_CONT_LIST];
     FILE * database;
-    database = fopen("database.txt", "r");
+    database = fopen("homework_database.txt", "r");
     printf("\n\n" );
     printf("\e[1;1H\e[2J");
     printf("\n");
@@ -123,7 +123,7 @@ int search_list(){
     FILE * database;
     printf("\nSearch query: ");
     scanf ("%s", query);
-    database = fopen("database.txt", "r");
+    database = fopen("homework_database.txt", "r");
     while ((fscanf(database, "%s\t%s\t%s", contact_name, contact_last_name, contact_phone)) != EOF){
         match = strstr(contact_name, query);
         if (match == NULL)
